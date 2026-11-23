@@ -1,45 +1,73 @@
-# 编年型 · 案例B：宇宙历史与氢形成
+# 编年型 · 案例B：宇宙历史
 
 ## 原始图片与来源
 
-![宇宙历史与氢形成](https://commons.wikimedia.org/wiki/Special:FilePath/History_of_the_Universe.svg)
+![原图](https://commons.wikimedia.org/wiki/Special:FilePath/History_of_the_Universe.svg)
 
-[原始作品及授权](https://commons.wikimedia.org/wiki/File:History_of_the_Universe.svg)
-
-Drbogdan / Yinweichen 等，2014 年发布；CC BY-SA 3.0（见来源页）。
+[原始作品与授权](https://commons.wikimedia.org/wiki/File:History_of_the_Universe.svg)；Drbogdan；CC BY-SA 3.0。数据来自[原始PNG版本说明](https://commons.wikimedia.org/wiki/File:HistoryOfUniverse-BICEP2-20140317.png)，非完整图内转录。
 
 ## 原始数据
 
-| 原始时间描述 | 事件 |
+| 时间描述 | 事件 |
 |---|---|
-| Big Bang | 宇宙时间起点 |
-| 380 000 years after the big bang | 中性氢形成 |
-
-数据依据发布页说明，尚未逐项核对原图。
+| Big Bang | 大爆炸 |
+| 380 000 years | 中性氢形成 |
 
 ## 数据清洗
 
-统一相对时间单位为年；去掉数字内空格；大爆炸作为零点，不把时间差误认作公历年份。
+| 原始值 | 清洗值 | 规则 |
+|---|---:|---|
+| Big Bang | 0 | 定义相对起点 |
+| 380 000 years | 380000 | 统一为年，保留近似性质 |
 
 ## 清洗后数据集与数据字典
 
-| 相对时间（年） | 事件 |
-|---:|---|
-| 0 | 大爆炸 |
-| 380000 | 中性氢形成 |
+| id | elapsed_year | event | precision |
+|---|---:|---|---|
+| E01 | 0 | 大爆炸 | 定义起点 |
+| E02 | 380000 | 中性氢形成 | 约数 |
 
-时间字段为数值型（单位：年），事件为文本型，精度为类别型（如适用）；—表示未确定，不等于零。
+id：文本唯一键；elapsed_year：相对大爆炸的年数，整数；event：文本标签；precision：精度类别。未获来源支持的阶段数值不补写。
 
 ## 数据结构与字段组合含义
 
-每行对应一个历史事件。时间＋事件表达演变顺序；时间＋精度区分明确与模糊时间记录。
+```mermaid
+flowchart TD
+ E[单条宇宙历史记录] --> I[id 唯一键]
+ E --> T[elapsed_year 相对年数]
+ E --> N[event 事件名称]
+ E --> P[precision 精度]
+```
+
+时间＋事件构成历史顺序；时间＋精度区分定义起点和近似估计。按时间升序排序。
 
 ## 统计图形与视觉编码
 
-原图以时间与宇宙尺度结合呈现历史。当前仅提取两个时间节点，无尺度数值，不能重构增长曲线；可用时间轴表达先后。
+### 基础图形：阶段时间轴
+
+```mermaid
+flowchart LR
+ A((0年 大爆炸)) --> B((380000年 中性氢形成))
+```
+
+节点间距不是时间比例。原图属于历史示意，不能将事件数当成宇宙物理量。RAWGraphs 可用散点图表达定量时间位置，以 elapsed_year 为 X，固定 Y 为辅助常量，event 为标签；不需要求和或平均。
+
+### 视觉编码图
+
+```mermaid
+flowchart LR
+ T[时间排序] --> X[节点横向位置]
+ N[事件文本] --> L[节点标签]
+ P[近似精度] --> Q[约数说明]
+```
 
 ## 叙事结构
 
-大爆炸→早期不透明阶段→中性氢形成；当前仅分析来源说明支持的早期阶段。
+```mermaid
+flowchart TD
+ A[宇宙起源] --> B[中性氢形成]
+```
 
-> 当前为基于来源说明的部分数据分析，尚未完成图内逐项核对。
+## 设计总结
+
+时间作为主索引，节点标注事件，连接线表达先后；区分顺序轴与等比例时间轴。当前为发布页可核实数据的子集，非完整原图复刻。
