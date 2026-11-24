@@ -31,3 +31,19 @@
 - ISOTYPE 是独立专项研究项目，见 [03-ISOTYPE信息图](../03-ISOTYPE信息图/README.md)，不属于本目录标签。
 - 每种标签目录包含 `00-标签说明.md` 与 `案例/README.md`。真实案例经来源、数据和版权核验后，再建立独立 CASE 目录。
 - 当前目录顺序与参考仓库一致；原有12类和新增5类的文档内容均予以保留，仅调整文件夹名称与序号。
+
+
+## 本次补充的五类案例（每类2件）
+
+- [CASE-0001-Chicago-Typographic-Map｜Chicago Neighborhood Typography Map（芝加哥街区文字地图）](./11-文字可视化-Visualized-Text/案例/CASE-0001-Chicago-Typographic-Map/分析.md)
+- [CASE-0002-Haeckel-Pedigree-of-Man｜Ernst Haeckel《Pedigree of Man》（人类谱系图）](./11-文字可视化-Visualized-Text/案例/CASE-0002-Haeckel-Pedigree-of-Man/分析.md)
+- [CASE-0001-Sobotta-1909-Plate-246｜Sobotta《人体解剖学图谱》（1909版图版246）](./12-解剖型-Anatomical/案例/CASE-0001-Sobotta-1909-Plate-246/分析.md)
+- [CASE-0002-Book-of-Health-1884｜《The Book of Health》胸腹部三维解剖叠页图（1884）](./12-解剖型-Anatomical/案例/CASE-0002-Book-of-Health-1884/分析.md)
+- [CASE-0001-Fernando-Baez-Resume｜Fernando Báez 信息图简历模板](./13-视觉简历-Visual-Resume/案例/CASE-0001-Fernando-Baez-Resume/分析.md)
+- [CASE-0002-Jenn-Gerlach-Resume｜Jenn Gerlach《My Resume》信息图简历](./13-视觉简历-Visual-Resume/案例/CASE-0002-Jenn-Gerlach-Resume/分析.md)
+- [CASE-0001-Multivariate-Income-Map｜Multivariate Maps：3D Median Household Income](./16-三维型-3D/案例/CASE-0001-Multivariate-Income-Map/分析.md)
+- [CASE-0002-China-Export-Flow-Globe｜China’s 2012 Export Flows（三维地球出口流向图）](./16-三维型-3D/案例/CASE-0002-China-Export-Flow-Globe/分析.md)
+- [CASE-0001-Rugby-World-Cup-Word-Cloud｜Rugby World Cup Wikipedia Word Cloud](./17-词云信息图-Word-Cloud/案例/CASE-0001-Rugby-World-Cup-Word-Cloud/分析.md)
+- [CASE-0002-Macbeth-Wordle｜Shakespeare’s Macbeth Wordle（麦克白词云）](./17-词云信息图-Word-Cloud/案例/CASE-0002-Macbeth-Wordle/分析.md)
+
+> 说明：案例图片均链接至可核验的真实来源；数据集按可核验范围清洗。原始数值未公开的案例已明确标注为结构样本或图面转录样本，不虚构完整数据。

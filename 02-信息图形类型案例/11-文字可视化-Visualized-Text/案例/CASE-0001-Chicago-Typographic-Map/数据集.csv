@@ -1,0 +1,5 @@
+record_id,neighborhood_name,city,record_status
+1,Lincoln Park,Chicago,visible_in_published_image
+2,Hyde Park,Chicago,visible_in_published_image
+3,Englewood,Chicago,visible_in_published_image
+4,Logan Square,Chicago,visible_in_published_image

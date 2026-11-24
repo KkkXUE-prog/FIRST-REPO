@@ -1,0 +1,7 @@
+record_type,field,value_or_definition,evidence_status
+schema,spatial_unit,Census Tract,project_description
+schema,measure,median_household_income,project_description
+schema,price_base_year,2017 USD,project_description
+encoding,height,median_household_income,project_description
+encoding,color,income_bracket,visible_legend
+data_availability,tract_level_values,not_retrieved,schema_only

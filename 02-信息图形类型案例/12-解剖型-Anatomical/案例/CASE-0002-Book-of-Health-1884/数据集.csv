@@ -1,0 +1,7 @@
+structure_id,structure_name,group,evidence
+1,Heart,thoracic_abdominal_diagram,collection_description
+2,Stomach,thoracic_abdominal_diagram,collection_description
+3,Colon,thoracic_abdominal_diagram,collection_description
+4,Lungs,thoracic_abdominal_diagram,collection_description
+5,Arteries,vascular_structures,collection_description
+6,Muscles,muscular_structures,collection_description

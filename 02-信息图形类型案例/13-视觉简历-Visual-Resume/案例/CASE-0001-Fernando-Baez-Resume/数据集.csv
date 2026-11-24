@@ -1,0 +1,9 @@
+record_id,module,visual_form,information_role,source_status
+1,Personal statement,text_block,identity_and_summary,visible_in_original
+2,My specialties,icon_group,professional_focus,visible_in_original
+3,Design skills,dot_matrix,skill_level_visual_encoding,scale_not_fully_documented
+4,Language skills,ring_gauge,language_proficiency_visual_encoding,scale_not_fully_documented
+5,Education,timeline_list,chronological_education,visible_in_original
+6,Work experience,year_markers,chronological_employment,visible_in_original
+7,Recognitions,medal_icons,awards_and_recognition,visible_in_original
+8,Hobbies and interests,icon_group,personal_interests,visible_in_original

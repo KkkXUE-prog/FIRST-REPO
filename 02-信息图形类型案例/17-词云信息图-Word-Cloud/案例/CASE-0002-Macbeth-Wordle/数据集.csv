@@ -1,0 +1,11 @@
+term,frequency,weight,term_status,source_scope
+ambition,,,visible_theme_word,wordcloud_app_macbeth
+darkness,,,visible_theme_word,wordcloud_app_macbeth
+betrayal,,,visible_theme_word,wordcloud_app_macbeth
+madness,,,visible_theme_word,wordcloud_app_macbeth
+guilt,,,visible_theme_word,wordcloud_app_macbeth
+deception,,,visible_theme_word,wordcloud_app_macbeth
+corruption,,,visible_theme_word,wordcloud_app_macbeth
+witchcraft,,,visible_theme_word,wordcloud_app_macbeth
+fate,,,visible_theme_word,wordcloud_app_macbeth
+greed,,,visible_theme_word,wordcloud_app_macbeth

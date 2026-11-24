@@ -1,0 +1,6 @@
+record_id,field,value,evidence
+1,title,Pedigree of Man,commons_metadata
+2,creator,Ernst Haeckel,commons_metadata
+3,publication_year,1897,commons_metadata
+4,source_work,The Evolution of Man,commons_metadata
+5,diagram_structure,branching pedigree,visual_observation
