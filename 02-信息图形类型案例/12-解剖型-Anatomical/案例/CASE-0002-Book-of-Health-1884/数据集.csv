@@ -1,7 +1,6 @@
-structure_id,structure_name,group,evidence
-1,Heart,thoracic_abdominal_diagram,collection_description
-2,Stomach,thoracic_abdominal_diagram,collection_description
-3,Colon,thoracic_abdominal_diagram,collection_description
-4,Lungs,thoracic_abdominal_diagram,collection_description
-5,Arteries,vascular_structures,collection_description
-6,Muscles,muscular_structures,collection_description
+record_id,field,value,evidence
+1,atlas,Sobotta's Atlas and Text-book of Human Anatomy,commons_metadata
+2,creator,Johannes Sobotta,commons_metadata
+3,edition_year,1911,commons_metadata
+4,plate_file,Sobo 1911 807.png,commons_metadata
+5,content_type,anatomical illustration,commons_metadata
